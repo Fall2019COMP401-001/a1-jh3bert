@@ -84,5 +84,6 @@ public class A1Adept {
 		
 		System.out.print("Average: "); 
 		System.out.printf("%.2f", average);
+		System.out.print("\n");
 	}
 }
