@@ -9,7 +9,6 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
-		int customerCount= 0;
 
 		int customers = scan.nextInt();
 
