@@ -11,7 +11,6 @@ public class A1Novice {
 		// Your code follows here.
 		int customerCount= 0;
 
-		System.out.println("Enter number of customers: ");
 		int customers = scan.nextInt();
 
 		String[] firstNames= new String[customers];
