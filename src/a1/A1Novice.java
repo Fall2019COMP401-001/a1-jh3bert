@@ -46,6 +46,7 @@ public class A1Novice {
 				
 				System.out.print(firstNames[i].charAt(0)+". "+lastNames[i]+": ");
 				System.out.printf("%.2f",totals[i]);
+				System.out.println();
 			}
 	
 	
