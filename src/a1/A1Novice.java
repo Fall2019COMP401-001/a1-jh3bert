@@ -18,32 +18,34 @@ public class A1Novice {
 		String[] lastNames= new String[customers];
 		double[] totals= new double[customers];
 		
+		double cost =0.0;
 
 			for (int i =0; i<firstNames.length; i++) {
-			
-			
+						
 			firstNames[i] = scan.next();
 			lastNames[i] = scan.next();
-						
+					
 			int items = scan.nextInt();
 
 			for (int y =0; y<items; y++) {
-
-				int quantity = scan.nextInt();
 				
+				int quantity = scan.nextInt();
+							
 				String itemName= scan.next();
-
+				
 				double price = scan.nextDouble();
 				
-				totals[y]=quantity*price;
+				cost+=quantity*price;
 			
 			}
-		
+			totals[i]=cost;
+			cost=0;
 			}
 			
 			for (int i =0; i<firstNames.length; i++) {
 				
-				System.out.println(firstNames[i].charAt(0)+". "+lastNames[i]+": "+totals[i]);
+				System.out.print(firstNames[i].charAt(0)+". "+lastNames[i]+": ");
+				System.out.printf("%.2f",totals[i]);
 			}
 	
 	
