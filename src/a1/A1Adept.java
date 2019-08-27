@@ -25,7 +25,7 @@ public class A1Adept {
 		String[] firstNames = new String[customers];
 		String[] lastNames = new String[customers];
 		double [] totals = new double[customers];
-		int cost =0;
+		double cost =0;
 		
 		for (int i=0; i<customers; i++) {
 			firstNames[i] = scan.next();
@@ -82,6 +82,7 @@ public class A1Adept {
 		System.out.printf("%.2f",min);
 		System.out.println(")");
 		
-		System.out.print("Average: "+ average);
+		System.out.print("Average: "); 
+		System.out.printf("%.2f", average);
 	}
 }
