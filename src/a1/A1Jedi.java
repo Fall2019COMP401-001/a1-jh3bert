@@ -52,7 +52,7 @@ public class A1Jedi {
 			if (customerCount[i]==0)
 				System.out.println("No customers bought "+itemNames[i]);
 			else
-				System.out.println(customerCount[i]+" customers bought "+itemQuantity[i]+itemNames[i]);
+				System.out.println(customerCount[i]+" customers bought "+itemQuantity[i]+" "+itemNames[i]);
 		}
 	}
 }
