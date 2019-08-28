@@ -35,11 +35,13 @@ public class A1Jedi {
 			
 			int itemsBought = scan.nextInt();
 			
+			int count =0;
+			
 			for(int y=0; y<itemsBought; y++) {
 				int quantity = scan.nextInt();
 				String itemName= scan.next();
 				
-				int count = 0;	
+
 				
 				for (int x =0; x < itemNames.length; x++) {
 					
