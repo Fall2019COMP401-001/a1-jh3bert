@@ -12,6 +12,8 @@ public class A1Jedi {
 		
 		int storeItems = scan.nextInt();
 		
+		int count =0;
+		
 		String[] itemNames = new String[storeItems];
 		double[] itemCosts = new double[storeItems];
 		
@@ -34,8 +36,6 @@ public class A1Jedi {
 			lastNames[i]= scan.next();
 			
 			int itemsBought = scan.nextInt();
-			
-			int count =0;
 			
 			for(int y=0; y<itemsBought; y++) {
 				int quantity = scan.nextInt();
