@@ -33,21 +33,20 @@ public class A1Jedi {
 			firstNames[i] = scan.next();
 			lastNames[i]= scan.next();
 			
-			int count = 0;
-			
 			int itemsBought = scan.nextInt();
 			
 			for(int y=0; y<itemsBought; y++) {
 				int quantity = scan.nextInt();
 				String itemName= scan.next();
 				
-					
+				int count = 0;	
+				
 				for (int x =0; x < itemNames.length; x++) {
 					
 					if (itemNames[x].equalsIgnoreCase(itemName)) {
 						itemQuantity[x]+=quantity;
 						if (repeats[x]==count) {
-						customerCount[x]+=1;
+						customerCount[x]++;
 						repeats[x]++;
 						}
 					}
@@ -56,9 +55,9 @@ public class A1Jedi {
 					if (repeats[x]==count)
 						repeats[x]++;
 				}
-				
+			count++;
 			}
-		count++;
+		
 		}
 
 		for (int i=0; i < itemNames.length; i++) {
