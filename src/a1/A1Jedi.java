@@ -41,7 +41,6 @@ public class A1Jedi {
 				int quantity = scan.nextInt();
 				String itemName= scan.next();
 				
-
 				
 				for (int x =0; x < itemNames.length; x++) {
 					
@@ -53,13 +52,12 @@ public class A1Jedi {
 						}
 					}
 				}
-				for (int x =0; x<itemNames.length; x++) {
-					if (repeats[x]==count)
-						repeats[x]++;
-				}
-			count++;
 			}
-		
+			for (int x =0; x<itemNames.length; x++) {
+				if (repeats[x]==count)
+					repeats[x]++;
+			}
+			count++;
 		}
 
 		for (int i=0; i < itemNames.length; i++) {
